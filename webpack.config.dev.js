@@ -18,6 +18,8 @@ module.exports = {
       "@utils": path.resolve(__dirname, "src/utils/"),
       "@components": path.resolve(__dirname, "src/components/"),
       "@containers": path.resolve(__dirname, "src/containers/"),
+      "@layout": path.resolve(__dirname, "src/layout/"),
+      "@routes": path.resolve(__dirname, "src/routes/"),
       "@styles": path.resolve(__dirname, "src/styles/"),
       "@images": path.resolve(__dirname, "public/assets/images/"),
       "@fonts": path.resolve(__dirname, "public/assets/fonts/"),
@@ -84,7 +86,7 @@ module.exports = {
     new Dotenv(),
   ],
   devServer: {
-    // contentBase: path.join(__dirname, "dist"),
+    // contentBase: path.join(__dirname, "dist"), no sirve, usar static
     static: "./dist",
     compress: true,
     historyApiFallback: true,

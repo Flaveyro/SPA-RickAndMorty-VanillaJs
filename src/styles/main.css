@@ -6,9 +6,16 @@
   font-style: normal;
 }
 
-/* :root {} */
+/*root, definiremos las variables*/
+ /* :root {
+   --primerColor: #2cd843;
+ }   */
 
-/* [data-theme="dark"] {} */
+ /*cambia el tema de colores, usado regularmente para el modo-oscuro*/
+/* [data-theme="dark"] {
+  --primerColor: #3a0bd3;
+} */
+
 
 html {
   font-size: 62.5%;
@@ -24,12 +31,11 @@ html {
 
 a {
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer;/*pone el cursor con diseño de manita a los enlaces*/
 }
 
-li,
-ol {
-  list-style: none;
+li{
+  list-style: none;/*elimina el bullet de los li o los # segun sea el caso (ol,ul)*/
 }
 
 body {
@@ -37,17 +43,14 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   background-color: cornflowerblue;
-}
-
-body {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto 1fr auto;
-  overflow-x: hidden;
+  display: grid;/*siempre mantene el footer hasta abajo*/
+  grid-template-columns: 100vw;/*solo abrá una columna que mantendra el 100% del viewport*/
+  grid-template-rows: auto 1fr auto;/*solo habran 3 filas, la de arriba y la de abajo con un alto automatico, la de en medio con 1fraccion(va a medir lo que tenga que medir)pero si no tiene contenido suficiente abarca todo el alto disponible*/
+  overflow-x: hidden;/*todo lo que se desborde a los lados, ocultalo*/
   position: relative;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar { /*elimina la barra de scroll, sera necesario agregar un boton para ir al inicio*/
   display: none;
 }
