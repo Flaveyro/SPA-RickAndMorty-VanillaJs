@@ -1,0 +1,116 @@
+.mainImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.mainImage img{
+    border-radius: 50%;
+    background-size: 160px;
+    height: 160px;
+    width: 160px;
+    background-color: gray;
+}
+
+
+main section{
+    padding: 15px;
+}
+
+.profile{
+    background: #002128;
+    width: 72%;
+    margin: 15px auto;
+    border-radius: 22px;
+}
+
+
+.id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name h2{
+    font-size: 27px;
+    padding: 14px;
+    background: #00ff97;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.specie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div h4{
+    display: flex;
+    justify-content: center;
+    color: #d6d6d6;
+    font-family: 'Roboto', sans-serif;
+    background: #8b8b8b;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 4px;
+    width: 83px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    background: #ffffff;
+    position: relative;
+    padding: 8px 50px;
+    border-radius: 30px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 5px 0px;  
+}
+
+
+
+button:hover{
+    color: white;
+    background: #00ff97;
+    transition: 0.2s ease;   
+}
+
+@media screen and (min-width: 600px){
+    .profile{
+        width: 340px;
+    }
+
+}

@@ -2,6 +2,7 @@ import getHash from "@utils/getHash"
 
 import Home from "@containers/Home"
 import About from "@containers/About"
+import err404 from "@containers/err404"
 import Layout from "@layout"
 
 
@@ -25,8 +26,9 @@ const router = () => {
       case 'about':
           body.innerHTML = Layout(About());
       break;
-      default: 
-      console.log('404')
+      default:
+        body.innerHTML = Layout(err404());
+        // console.log('404')
   }
 
 }
