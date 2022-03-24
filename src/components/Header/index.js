@@ -1,22 +1,18 @@
 import '@components/Header/style.css'
 
+import logo from '@images/logo.png'
+
 const Header = () => {
     const view = `
         <header>
-            <h1>Hola Mundo, dentro del Header</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#/">Home</a>
-                    </li>
-                    <li>
-                        <a href="#/main">Main</a>
-                    </li>
-                    <li>
-                        <a href="#/about">About</a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="#/">
+                <img src=${logo} alt="">
+            </a>
+            <div class="search">
+                <p>Search a Character &nbsp;</p>
+                <input type="search" placeholder="">
+                <button>Buscar</button>
+            </div>
         </header>
     `
     return view;

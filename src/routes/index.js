@@ -18,17 +18,16 @@ const router = () => {
   // `;
   switch (hash) {
       case '/':
-          body.innerHTML = Layout(Home());
+          Layout(Home);
         break;
       case 'main':
           console.log('main')
         break;
       case 'about':
-          body.innerHTML = Layout(About());
+          Layout(About);
       break;
       default:
-        body.innerHTML = Layout(err404());
-        // console.log('404')
+         Layout(err404);
   }
 
 }

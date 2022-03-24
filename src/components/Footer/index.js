@@ -3,7 +3,9 @@ import "@components/Footer/style.css"
 const Footer = () => {
     const view = `
         <footer>
-            <p>All Rigths Reserved 2022</p>
+            <p>
+            Made with love ❤️ © 2019 All Rights Reserved.
+            </p>
         </footer>
     `
 

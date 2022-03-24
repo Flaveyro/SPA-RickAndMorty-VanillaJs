@@ -1,0 +1,11 @@
+footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+footer p{
+    font-family: 'roboto';
+    font-size: 12px;
+}

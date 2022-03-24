@@ -42,13 +42,14 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
-  background-color: cornflowerblue;
+  background-color: rgb(133, 172, 250);
   min-height: 100vh;
   display: grid;/*siempre mantene el footer hasta abajo*/
   grid-template-columns: 100vw;/*solo abrá una columna que mantendra el 100% del viewport*/
   grid-template-rows: auto 1fr auto;/*solo habran 3 filas, la de arriba y la de abajo con un alto automatico, la de en medio con 1fraccion(va a medir lo que tenga que medir)pero si no tiene contenido suficiente abarca todo el alto disponible*/
   overflow-x: hidden;/*todo lo que se desborde a los lados, ocultalo*/
   position: relative;
+  background-image: url('../../public/assets/images/galaxy.jpg');
 }
 
 body::-webkit-scrollbar { /*elimina la barra de scroll, sera necesario agregar un boton para ir al inicio*/
