@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: "Ubuntu";
   src: url("@fonts/ubuntu-300.woff2") format("woff2"),
     url("@fonts/ubuntu-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 /*root, definiremos las variables*/
  /* :root {

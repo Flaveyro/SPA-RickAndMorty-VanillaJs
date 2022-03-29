@@ -1,0 +1,39 @@
+.cards {
+    width: 48%;
+    display: flex;
+    /* border: 0.1rem solid red; */
+    max-width: 200px;
+    margin: 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: ease-in-out all 0.3s;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
+
+.cards img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    transition: ease-in-out all 0.3s;
+}
+
+.character-name{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(0,0,0, 0.6);
+    transition: ease-in-out all 0.3s;
+}
+
+.character-name p {
+    color: white;
+}

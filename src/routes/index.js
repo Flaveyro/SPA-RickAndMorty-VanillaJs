@@ -4,10 +4,11 @@ import Home from "@containers/Home"
 import About from "@containers/About"
 import err404 from "@containers/err404"
 import Layout from "@layout"
+import Character from "@containers/Character"
 
 
-// console.log(Home())
 const router = () => {
+  // console.log(Character)
   const hash = getHash();
   // console.log(hash);
   const body = document.getElementsByTagName('body')[0];  
@@ -16,12 +17,12 @@ const router = () => {
   // ${About()}
   // ${Footer()}
   // `;
-  switch (hash) {
+  switch (hash[0]) {
       case '/':
           Layout(Home);
         break;
-      case 'main':
-          console.log('main')
+      case 'character':
+          Layout(Character, hash[1])
         break;
       case 'about':
           Layout(About);
